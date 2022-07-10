@@ -1,0 +1,149 @@
+:root {
+  --VeryDarkGrayishBlue: #48556a;
+  --DesaturatedDarkBlue: #6d7f97;
+  --GrayishBlue: #9eafc2;
+  --LightGrayishBlue: #ecf2f8;
+
+  --dfont: "Manrope", sans-serif;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  height: 100%;
+}
+
+body {
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--LightGrayishBlue);
+  font-family: var(--dfont);
+}
+
+.card {
+  display: flex;
+  width: 55vw;
+  background-color: white;
+  border-radius: 10px;
+  /* overflow: hidden; */
+}
+.big-img-container {
+  flex: 1 1 40%;
+  background-image: url(./images/drawers.jpg);
+  background-size: cover;
+  background-position: center center;
+  border-radius: 10px 0 0 10px;
+}
+
+.text-container {
+  flex: 1 1 60%;
+  padding: 30px 40px;
+}
+
+.footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 98%;
+}
+
+.auth {
+  display: grid;
+  grid-template-rows: auto auto;
+  grid-template-columns: auto auto;
+  align-items: center;
+  column-gap: 15px;
+}
+
+.auth-img {
+  width: 35px;
+  border-radius: 50%;
+  grid-row: 1/3;
+}
+
+.header {
+  font-weight: 700;
+  font-size: 1.25rem;
+  color: var(--VeryDarkGrayishBlue);
+  margin-bottom: 10px;
+}
+
+.para {
+  color: var(--DesaturatedDarkBlue);
+  font-size: 0.8rem;
+  line-height: 1.7;
+  margin-bottom: 15px;
+  font-weight: 500;
+}
+
+.auth-name {
+  color: var(--VeryDarkGrayishBlue);
+  font-weight: 700;
+  font-size: 0.9rem;
+}
+
+.auth-date {
+  color: var(--GrayishBlue);
+  font-size: 0.85rem;
+}
+
+.share {
+  /* background-color: var(--LightGrayishBlue);
+  padding: 5px 9px 5px 9px;
+  border-radius: 50%; */
+  position: relative;
+}
+.fa-share-alt {
+  display: block;
+  box-sizing: initial;
+  background-color: var(--LightGrayishBlue);
+  padding: 10px 10px;
+  border-radius: 50%;
+  color: var(--DesaturatedDarkBlue);
+}
+
+.share-tol {
+  position: absolute;
+  display: flex;
+  background-color: var(--VeryDarkGrayishBlue);
+  align-items: center;
+  padding: 10px 30px;
+  column-gap: 15px;
+  color: white;
+  border-radius: 10px;
+  top: -25px;
+  left: 50%;
+  transform: translate(-50%, -100%);
+  display: none;
+}
+
+.tol-text {
+  color: var(--GrayishBlue);
+  text-transform: uppercase;
+  letter-spacing: 4px;
+  font-size: 0.7rem;
+  font-weight: 700;
+}
+
+.share-tol > a {
+  color: white;
+  font-size: 1.3rem;
+}
+
+.share-tol::after {
+  content: "";
+  display: block;
+  position: absolute;
+  border: 10px solid transparent;
+  border-top: 10px solid var(--VeryDarkGrayishBlue);
+  top: 100%;
+  left: 50%;
+  transform: translate(-50%, 0);
+}
