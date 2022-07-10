@@ -1,0 +1,55 @@
+@media screen and (max-width: 413px) {
+  .card {
+    display: block;
+    width: 80vw;
+  }
+  .big-img-container {
+    width: 100%;
+    height: 30vh;
+    border-radius: 10px 10px 0 0;
+  }
+  .text-container {
+    padding: 30px;
+    background-color: white;
+    border-radius: 0 0 10px 10px;
+    position: relative;
+    padding-bottom: 15px;
+  }
+
+  .footer {
+    width: 100%;
+  }
+
+  .header {
+    font-size: 1.1rem;
+  }
+  .para {
+    font-size: 0.8rem;
+    margin-bottom: 30px;
+  }
+
+  .auth-name {
+    font-size: 0.8rem;
+  }
+  .auth-date {
+    font-size: 0.75rem;
+  }
+
+  .share {
+    position: static;
+    z-index: 1;
+  }
+
+  .share-tol {
+    width: 100%;
+    top: 100%;
+    height: 70px;
+    border-radius: 0;
+    /* opacity: 0.3; */
+    border-radius: 0 0 10px 10px;
+    z-index: -1;
+  }
+  .share-tol::after {
+    display: none;
+  }
+}
