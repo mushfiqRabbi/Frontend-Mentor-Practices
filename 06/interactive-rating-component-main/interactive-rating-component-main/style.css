@@ -1,0 +1,154 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  color: white;
+  font-family: "Overpass", sans-serif;
+}
+
+html,
+body {
+  height: 100%;
+}
+
+body {
+  position: relative;
+  background-color: hsl(216, 12%, 8%);
+}
+.thk-card {
+  display: none;
+}
+
+.main-card {
+  height: 335px;
+  width: 333px;
+  background-color: rgb(37, 45, 55);
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  padding: 25px;
+  border-radius: 20px;
+}
+
+.rating-card {
+  width: 100%;
+  /* display: none; */
+}
+
+.icon-star {
+  background-color: hsl(213, 19%, 25%);
+  padding: 11px;
+  width: 35px;
+  border-radius: 50%;
+  margin-bottom: 20px;
+}
+
+.header {
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+.promt {
+  font-size: 13px;
+  letter-spacing: 0.5px;
+  color: rgba(255, 255, 255, 0.4);
+  line-height: 1.5;
+  margin-bottom: 25px;
+}
+
+.inrating {
+  display: none;
+}
+
+.lrating {
+  background-color: rgb(52, 63, 76);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  text-align: center;
+  font-size: 14px;
+  color: rgba(255, 255, 255, 0.4);
+  cursor: pointer;
+}
+
+.rating {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 30px;
+}
+
+.submit-btn {
+  background-color: rgb(251, 116, 19);
+  color: white;
+  display: block;
+  margin: 0 auto;
+  width: 100%;
+  font-size: 14px;
+  /* font-weight: bold; */
+  letter-spacing: 1.3px;
+  text-transform: uppercase;
+  border: none;
+  padding: 10px;
+  border-radius: 20px;
+  /* margin-bottom: 5px; */
+}
+
+.lrating:hover {
+  background-color: hsl(216, 12%, 54%);
+  color: white;
+}
+
+.inrating:checked + .lrating {
+  background-color: rgb(251, 116, 19);
+  color: white;
+}
+
+.submit-btn:hover {
+  background-color: white;
+  font-weight: bold;
+  color: rgb(251, 116, 19);
+  cursor: pointer;
+}
+
+.img-thk {
+  display: block;
+  margin: auto;
+  width: 130px;
+  margin-top: 10px;
+}
+
+.rat-stat {
+  background-color: rgb(52, 63, 76);
+  /* width: 70%; */
+  width: fit-content;
+  margin: auto;
+  padding: 6px 15px;
+  border-radius: 12px;
+  text-align: center;
+  color: rgb(251, 116, 19);
+  font-size: 13px;
+  letter-spacing: 0.6px;
+  margin-top: 25px;
+}
+
+.thank-you {
+  font-size: 22px;
+  width: fit-content;
+  margin: 0 auto;
+  font-weight: bold;
+  letter-spacing: 0.3px;
+  margin-top: 20px;
+}
+
+.note {
+  color: rgba(255, 255, 255, 0.4);
+  text-align: center;
+  font-size: 14px;
+  line-height: 1.4;
+  margin-top: 5px;
+}
