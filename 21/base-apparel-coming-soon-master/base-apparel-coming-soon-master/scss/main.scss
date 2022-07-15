@@ -1,5 +1,57 @@
 @import "./utils";
 
 body {
-  background-color: azure;
+  background: linear-gradient(135deg, hsl(0, 0%, 100%), hsl(0, 100%, 98%));
+  font: {
+    family: $dfont;
+  }
+}
+
+.left {
+  width: 60%;
+  float: left;
+  padding: 0 13%;
+
+  .logo {
+    margin-top: 50px;
+    .fa-circle {
+      font-size: 25px;
+      vertical-align: middle;
+      color: $DesaturatedRed;
+    }
+    p {
+      display: inline-block;
+      width: min-content;
+      vertical-align: middle;
+      text-transform: uppercase;
+      letter-spacing: 3px;
+      font-weight: 900;
+      margin-left: 3px;
+    }
+  }
+  .article {
+    margin-top: 100px;
+    &-header {
+      text-transform: uppercase;
+      letter-spacing: 10px;
+      font-size: 3rem;
+      font-weight: 600;
+      width: min-content;
+      &::first-line {
+        color: $DesaturatedRed;
+        font-weight: 300;
+      }
+    }
+  }
+}
+
+.right {
+  width: 40%;
+  height: 100%;
+  float: left;
+  overflow: hidden;
+  img {
+    height: auto;
+    width: 100%;
+  }
 }
